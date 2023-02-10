@@ -17,16 +17,27 @@ function App() {
         position="-26.737 27.195 190.240"
         rotation="0 -130 0"
       ></a-sky>
-      <a-entity camera wasd-controls="acceleration: 500" look-controls="sensitivity: 10"></a-entity>
+      {/* <a-entity camera wasd-controls="acceleration: 500" look-controls="sensitivity: 10"></a-entity> */}
       <a-entity
         id="skeleton"
         animation-mixer="clip: *;"
+        // animation-mixer="clip: walk"
         gltf-model="url(/assets/models/male-avatar/scene.gltf)"
-        position="-3.509 0 0.872"
+        position="-3.509 0 -27.939"
         rotation="0 0 0"
-        scale="2 2 2"
-        // animation="property: position;  from:3.494 0 0.911; to: -3.509 0 -7.959; dur: 15000; dir:alternate; easing: linear; loop: true"
+        scale="10 10 10"
+        animation="property: position;  from:3.494 0 19.469; to: -3.509 0 134.237; dur: 15000; dir:alternate; easing: linear; loop: true"
       ></a-entity>
+        <a-entity    id ="bot"
+                cursor-listener
+                scale="3.5 3.5 3.5"
+                position="0 1 -9.359"
+                rotation="0 0 0"
+                animation-mixer="clip: run"
+               
+                json-model="src: url(models/bot4.json);"
+       
+      ></a-entity>   
   </a-scene>
   );
 }
