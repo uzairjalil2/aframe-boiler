@@ -1,5 +1,7 @@
 import React from "react";
 import "aframe";
+import "aframe-extras";
+import "../simple-navmesh-constraint";
 
 const AFrameScene = () => {
   return (
@@ -19,7 +21,7 @@ const AFrameScene = () => {
           movement-controls='speed:0.1;camera:#head;'
           position='0 1.65 0'
           rotation='0 45 0'
-        //   wasd-controls='enabled: true'
+          wasd-controls='enabled: true'
           origin-on-ar-start
         >
           {/* <!-- camera --> */}
